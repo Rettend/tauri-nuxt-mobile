@@ -1,0 +1,33 @@
+{
+  "name": "tauri-app",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev --host",
+    "build": "vue-tsc --noEmit && nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "tauri": "tauri",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0-alpha.11",
+    "@tauri-apps/plugin-shell": "^2.0.0-alpha.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "0.43.1",
+    "@nuxt/devtools": "latest",
+    "@tauri-apps/cli": "^2.0.0-alpha.17",
+    "@unocss/nuxt": "^0.57.6",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "8.49.0",
+    "internal-ip": "^7.0.0",
+    "nuxt": "^3.8.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.4",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
