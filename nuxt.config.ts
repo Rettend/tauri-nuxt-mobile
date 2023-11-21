@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from 'nuxt/config'
+import { internalIpV4 } from 'internal-ip'
 
 export default defineNuxtConfig({
   devtools: {
@@ -9,14 +10,18 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
   ],
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000,
+  },
   vite: {
     clearScreen: false,
     server: {
       strictPort: true,
       hmr: {
-        host: '0.0.0.0',
+        host: await internalIpV4(),
         protocol: 'ws',
-        port: 5173,
+        port: 3001,
       },
     },
   },
