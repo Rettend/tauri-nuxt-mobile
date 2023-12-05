@@ -1,6 +1,8 @@
 # Tauri
 core/gen
 core/.cargo
+src-tauri/gen
+src-tauri/.cargo
 
 # Nuxt dev/build outputs
 .output

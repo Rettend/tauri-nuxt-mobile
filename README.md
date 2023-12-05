@@ -1,6 +1,6 @@
 # Tauri Nuxt Mobile 📱
 
-Install `@antfu/ni` globally
+Install `@antfu/ni` and `pnpm` globally
 
 - dev (browser): `nr dev`
 
@@ -18,9 +18,9 @@ Install `@antfu/ni` globally
 
 ## Comes with
 
-- Nuxt 3 (+ DevTools)
-- Antfu EsLint (older)
-- UnoCSS
+- Nuxt `3.7.4` (+ DevTools `0.8.5`)
+- Antfu EsLint `0.43.1`
+- UnoCSS `0.57.6`
 
 ## Pre-requisites
 

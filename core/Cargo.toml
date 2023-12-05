@@ -1,13 +1,11 @@
 [package]
 name = "tauri-app"
 version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
+description = "This is an example Tauri app."
+authors = ["You"]
+license = "MIT"
 repository = ""
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
 name = "tauri_app_lib"
@@ -23,6 +21,4 @@ tauri-plugin-shell = "2.0.0-alpha"
 serde_json = "1.0"
 
 [features]
-# this feature is used for production builds or when `devPath` points to the filesystem
-# DO NOT REMOVE!!
 custom-protocol = ["tauri/custom-protocol"]
