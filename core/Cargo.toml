@@ -2,14 +2,18 @@
 name = "tauri-app"
 version = "0.0.0"
 description = "This is an example Tauri app."
-authors = ["You"]
+authors = [ "You" ]
 license = "MIT"
 repository = ""
 edition = "2021"
 
 [lib]
 name = "tauri_app_lib"
-crate-type = ["staticlib", "cdylib", "rlib"]
+crate-type = [
+  "staticlib",
+  "cdylib",
+  "rlib"
+]
 
 [build-dependencies]
 tauri-build = { version = "2.0.0-alpha", features = [] }
@@ -21,4 +25,4 @@ tauri-plugin-shell = "2.0.0-alpha"
 serde_json = "1.0"
 
 [features]
-custom-protocol = ["tauri/custom-protocol"]
+custom-protocol = [ "tauri/custom-protocol" ]

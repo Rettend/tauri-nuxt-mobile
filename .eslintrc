@@ -1,9 +1,0 @@
-{
-  "extends": "@antfu",
-  "ignorePatterns": [
-    "dist/",
-    "node_modules/",
-    ".nuxt/",
-    "core/"
-  ]
-}
