@@ -17,11 +17,7 @@
 ### Install `tauri` and `pnpm` globally
 
 ```bash
-ni -g @tauri-apps/cli@next
-```
-
-```bash
-npm install -g pnpm
+ni -g @tauri-apps/cli@next pnpm
 ```
 
 If you skip this step, you will need to run the tauri scripts like this: `npx tauri dev` or `nr tauri dev`.
